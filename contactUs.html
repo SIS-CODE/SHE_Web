@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.H.E.</title>
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Jost:wght@300&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link href="https://fonts.googleapis.com/css?family=Arapey|Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+
+    <!-- ionicons -->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+      <!-- Bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!-- navBar -->
+  <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+    <a href="index.html" class="navbar-brand" style="font-weight: 400; font-size: 1.2rem; font-family: 'Belleza'; color: #ff748c;"><img src="images/logo.png" style="width: 70px; height: 70px; object-fit: cover; padding-left: 2%;" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse sticky-top" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ourCampaigns.html">Our Campaigns</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="howToUse.html">How to Use?</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="contactUs.html">Contact Us<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="contact">
+    <h1 style="text-align: center; padding-bottom: 5%; font-family: 'Belleza';">Contact Us</h1>
+    <div class="row">
+      <div class="accordion col-lg-6 faq" id="accordionExample">
+        <h3 style="text-align: center; font-family: 'Belleza';">Frequently asked Questions</h3>
+        <div class="card">
+          <div class="card-header" id="Question1">
+            <h2 class="mb-0">
+              <button class="btn btn-link" style="color: #020202ff;"type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                How is the authenticity of the app proven?
+              </button>
+            </h2>
+          </div>
+  
+          <div id="collapseOne" class="collapse" aria-labelledby="Question1" data-parent="#accordionExample">
+            <div class="card-body">
+              We try to maintain a one-on-one relationship between the donor and the volunteer through services like chat and calling through the app.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="Question2">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" style="color: #020202ff; text-align: justify;" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                How do the donors know the volunteers are in fact helping out the people in need?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="Question2" data-parent="#accordionExample">
+            <div class="card-body">
+              Our volunteers will mostly be members of an NGO and we recommend them to provide an id to the donor. The non-NGO volunteers can authenticate the process by the means of images.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="Question3">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" style="color: #020202ff;" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                How can an organization take part in this campaign?
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="Question3" data-parent="#accordionExample">
+            <div class="card-body">
+              Thank you for taking this step! Simply fill out the form on this page stating your organization's contact information and we will be reaching out to you soon.
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  
+      <!-- Form -->
+      <form method="POST" action="https://formspree.io/f/xaylrbqp" class="col-lg-6">
+        <h2 style="text-align: center; font-family: 'Belleza';">Thank You for your interest! </h2>
+        <div class="form-row for">
+          <div class="form-group col-md-6">
+            <label for="inputName" name="name" >Name</label>
+            <input type="text" class="form-control" id="inputName" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" name="_replyto" class="form-control" id="inputEmail4" required/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputType">Query</label>
+          <input type="text" class="form-control" name="message" id="inputType" required/>
+        </div>
+        <button type="submit" class="btn btn-dark">Submit</button>
+      </form>
+    </div>
+  </div>
+  <section class="footer">
+    <div>
+      <hr style="border-top: 1px solid black; padding-bottom: 3%;">
+      <h4>Feel free to contact us anytime!</h4>
+      <br>
+      <div class="row">
+        <div class="contactInfo col-lg-6 col-md-6 col-sm-6">
+          <ion-icon name="mail-outline" style="font-size: 2.5rem; padding-right: 3%;"></ion-icon>
+          <address> <a href="" >she@gmail.com</a></address>
+        </div>
+        <div class="contactInfo col-lg-6 col-md-6 col-sm-6">
+          <ion-icon name="call-outline" style="font-size: 2.5rem; padding-left: 3%;"></ion-icon>
+          <address><a href="">+91-987654321</a></address>
+        </div>    
+      </div>
+    </div>
+  </section>
+  
+  </body>
+  
+  </html>
+  
