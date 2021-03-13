@@ -7,8 +7,13 @@ body {
     font-family: 'Jost', sans-serif;
     background-color: #ffdae0;
     animation-name: pageBackground;
-    animation-duration: 4s;
+    animation-duration: 3s;
     text-align: justify;
+}
+
+@keyframes pageBackground {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 
 html,body {
@@ -85,6 +90,12 @@ html,body {
     margin: 7% 5% 5% 5%;
 }
 
+.chatBot {
+    position: fixed;
+    bottom: 2px;
+    right: 10px;
+    z-index: 9;
+  }
 
 
 /* Header */
@@ -95,8 +106,6 @@ html,body {
 }
 
 .rightHeader {
-    /* margin-left: auto;
-    margin-right: auto; */
     text-align: center;
     padding: 0% 5% 0% 5%;
 }
@@ -151,6 +160,26 @@ html,body {
     padding-top: 3%;
 }
 
+/* Medical Support */
+
+.doctorImg {
+    width: 250px;
+    height: 150;
+    object-fit: cover;
+    text-align: center;
+}
+
+.quote {
+  padding: 5% 3%;
+  font-family: 'Belleza';
+  text-align: center;
+}
+
+.docIns {
+  padding: 7% 7% 4% 7%;
+}
+
+
 /* DESKTOP */
 
 @media only screen and (min-width: 768px){
@@ -189,8 +218,16 @@ html,body {
     .stepIcon {
         float: right;
     }
+
+    .doctorImg {
+        width: 450px;
+        height: 300px;
+        object-fit: cover;
+        text-align: center;
+    }
 }
 
+/* Flippin cards */
 
 .mb-5 {
     font-size: 48px;
