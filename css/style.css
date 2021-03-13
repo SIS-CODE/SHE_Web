@@ -58,6 +58,10 @@ html,body {
     padding-top: 5%;
 }
 
+.stepIcon {
+    text-align: center;
+}
+
 .footer {
     text-align: center;
     margin: 7% 5% 5% 5%;
@@ -162,5 +166,9 @@ html,body {
         max-height: 550px;
         object-fit: cover;
         align-self: center;
+    }
+
+    .stepIcon {
+        float: right;
     }
 }
