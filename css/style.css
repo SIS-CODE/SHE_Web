@@ -58,6 +58,14 @@ html,body {
     padding-top: 5%;
 }
 
+/* howToUse page */
+
+.how{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 4% 7% 7% 2%;
+}
+
 .stepIcon {
     text-align: center;
 }
